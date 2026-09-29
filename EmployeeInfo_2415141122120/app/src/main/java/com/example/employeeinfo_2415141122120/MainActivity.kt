@@ -1,14 +1,18 @@
 package com.example.employeeinfo_2415141122120
 
 import android.os.Bundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.employeeinfo_2415141122120.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val nhanVien = Employee(
             maNhanVien = "NV2120",
@@ -21,8 +25,6 @@ class MainActivity : AppCompatActivity() {
             email = "minhthao2415141122120@gmail.com"
         )
 
-        val tvThongTin = findViewById<TextView>(R.id.tvThongTin)
-
-        tvThongTin.text = nhanVien.hienThiThongTin()
+        binding.tvThongTin.text = nhanVien.hienThiThongTin()
     }
 }
