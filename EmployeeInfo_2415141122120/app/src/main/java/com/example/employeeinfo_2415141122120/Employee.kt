@@ -7,5 +7,6 @@ data class Employee(
     val tuoi: Int,
     val luong: Double,
     val gioiTinh: String,
-    val thamNien: Int
+    val thamNien: Int,
+    val email: String
 )

@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
             tuoi = 20,
             luong = 15000000.0,
             gioiTinh = "Nữ",
-            thamNien = 2
+            thamNien = 2,
+            email = "minhthao2415141122120@gmail.com"
         )
 
         val tvThongTin = findViewById<TextView>(R.id.tvThongTin)
