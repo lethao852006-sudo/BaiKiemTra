@@ -39,7 +39,12 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:layout_marginBottom="12dp" />
-
+        <TextView
+            android:id="@+id/tvThongTin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:lineSpacingExtra="8dp" />
         <TextView
             android:id="@+id/tvTuoi"
             android:layout_width="match_parent"

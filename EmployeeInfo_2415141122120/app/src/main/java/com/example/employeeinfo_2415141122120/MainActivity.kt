@@ -1,6 +1,7 @@
 package com.example.employeeinfo_2415141122120
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -19,25 +20,8 @@ class MainActivity : AppCompatActivity() {
             thamNien = 2
         )
 
-        findViewById<android.widget.TextView>(R.id.tvMaNhanVien).text =
-            "Mã nhân viên: ${nhanVien.maNhanVien}"
+        val tvThongTin = findViewById<TextView>(R.id.tvThongTin)
 
-        findViewById<android.widget.TextView>(R.id.tvHoTen).text =
-            "Họ tên: ${nhanVien.hoTen}"
-
-        findViewById<android.widget.TextView>(R.id.tvPhongBan).text =
-            "Phòng ban: ${nhanVien.phongBan}"
-
-        findViewById<android.widget.TextView>(R.id.tvTuoi).text =
-            "Tuổi: ${nhanVien.tuoi}"
-
-        findViewById<android.widget.TextView>(R.id.tvLuong).text =
-            "Lương: ${nhanVien.luong}"
-
-        findViewById<android.widget.TextView>(R.id.tvGioiTinh).text =
-            "Giới tính: ${nhanVien.gioiTinh}"
-
-        findViewById<android.widget.TextView>(R.id.tvThamNien).text =
-            "Thâm niên: ${nhanVien.thamNien} năm"
+        tvThongTin.text = nhanVien.hienThiThongTin()
     }
 }
